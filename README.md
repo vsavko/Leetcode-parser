@@ -11,4 +11,8 @@ Requirments:
 2. Chromedriver for you browser version from https://chromedriver.chromium.org/
 3. Selenium driver .jar https://www.selenium.dev/downloads/
 
-Enter your name and password, and specify the location where you want your codes to be downloaded to in the main method. 
+In the main method specify:
+0. Your name
+1. Password
+2. Directory where your codes will be downloaded
+3. The location of the chromedriver
