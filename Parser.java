@@ -30,7 +30,6 @@ public class Parser {
 	
 	private static List<String> getExerciseLinks(String fileLocation, WebDriver driver) throws InterruptedException {
 		System.out.println("Getting exercise hyperlinks");
-		//driver.get("https://leetcode.com/submissions/");
 		driver.get("https://leetcode.com/submissions/");
 		
 		Thread.sleep(3000); 
@@ -83,7 +82,6 @@ public class Parser {
 		}
 		fileOut.close();
 		return submissions;
-
 	}
 	
 	private static void getExercises(String fileLocation, WebDriver driver, List<String> submissions) throws InterruptedException {
@@ -105,10 +103,8 @@ public class Parser {
 		extention.put("rust", new String [] {".rs", "/*", "*/"});
 		extention.put("mysql", new String [] {".sql", "/*", "*/"});
 
-		
 		new File(fileLocation + "/exercises/").mkdirs();
 
-		
 		for(String sub: submissions) {
 			driver.get(sub);
 			Thread.sleep(2000);
@@ -170,8 +166,6 @@ public class Parser {
 			fileOut.close();
 		}
 		System.out.println("All done!");
-		
-		
 	}
 	
 	
@@ -195,7 +189,5 @@ public class Parser {
 		login(driver, username, password);
 		List<String> submissions = getExerciseLinks(location, driver);
 		getExercises(location, driver, submissions);
-		
-
 	}
 }
