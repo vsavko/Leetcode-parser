@@ -12,6 +12,7 @@ Requirments:
 3. Selenium driver .jar https://www.selenium.dev/downloads/
 
 In the main method specify:
+
 0. Your name
 1. Password
 2. Directory where your codes will be downloaded
